@@ -201,7 +201,14 @@
     function openVideo(){
       const id = 'VIDEO_ID';
       if(id && id !== ''){
-        window.open('https://www.youtube.com/watch?v='+id, '_blank');
+        <iframe class="responsive-iframe" 
+        src="https://www.youtube.com/embed/05FTcJg4Kns" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
+
       } else {
         const el = document.querySelector('.iframe-holder');
         if(el) el.scrollIntoView({behavior:'smooth'});
